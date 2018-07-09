@@ -1,0 +1,172 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+.typewriter					/* Div for typewriter*/
+{
+	
+	width: 16em;
+	margin: -34em 23em 0 3em;
+}
+
+.typewriter h1 
+{
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  margin-top: calc(100% - 80%); 
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* fontawesome */
+[class*="fontawesome-"]::before 
+{
+  font-family: 'FontAwesome', sans-serif;
+  display: inline-block;
+	/* list-style: none; */
+	color: #ffffff;
+	font-size: 2em;
+	margin: 11.5em 0em 0em 0em;
+}
+
+.socialIcons a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
+{
+
+	margin: 0em 2em 0em 66em;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.socialIcons a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
+{
+
+	margin: 0em 2em 0em 0em;
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*Top navigation div */
+#navigation
+{
+
+	display: inline-flex;
+	height: 5em;
+	width: 100%;
+	font-size: 16px;
+	font-style: Raleway;
+	overflow: hidden;
+}
+
+#navigation a:first-of-type        /*To set properties of first 'a' element in nav*/
+{
+
+	color: #ffffff;
+	float: right;
+	margin: 0.75em 2em 0em 50em;
+	text-decoration: none;
+
+}
+
+#navigation a            /*To set properties of all 'a' elements in nav*/
+{
+
+	color: #ffffff;
+	float: right;
+	margin: 0.75em 2em 0em 0em;
+	text-decoration: none;
+
+}
+
+#navigation a:hover         /*To set hover properties to all 'a' elements in nav*/
+{
+
+	color : red;
+}
+
+#navigation .icon {
+  display: none;
+}
+
+/* Brackets go out */
+nav.brackets a:before, nav.brackets a:after       /*To give the navbar elements a bracket in-out animation*/
+{
+    position: relative;
+    color : #ffffff;
+    opacity: 0;
+    font-size: 20px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+nav.brackets a:before
+{
+    content: '{';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+nav.brackets a:after
+{
+    content: '}';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+nav.brackets a:hover:before, nav.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+body               /*To set properties for body of html*/
+{ 
+	margin:0; 
+	font:normal 75% Arial, Helvetica, sans-serif;
+	display: block;
+	justify-content: center;
+	background-color: #141414;
+}  
+
+
+canvas           /*To set properties for canvas of particles animation*/
+{ 
+	display: block;
+	vertical-align: bottom; 
+	margin-top: 6em;
+	height: 100%
+} 
+
+/* ---- particles.js container ---- */ 
+#particles-js
+{ 
+	position:absolute; 
+	width: 100%; 
+	height: 80%; 
+	/* background-color: #000000;  */
+	background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/image_src/i-love-coding-dark-big.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: 90% 20%; 	
+	display: block;
+	/* justify-content: center; */
+} 
+
+

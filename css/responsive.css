@@ -1,0 +1,362 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+@media screen and (max-width:345px)
+{
+
+	.typewriter
+	{
+
+		margin-top: 25em;
+		margin-left: 5.5em;
+	}
+
+
+	/* ---- particles.js container ---- */ 
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 50% 80%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	}
+}
+
+@media screen and (min-width:345px) and (max-width:418px)
+{
+		
+	.typewriter
+	{
+
+		margin-top: 25em;
+		margin-left: 8em;
+	}
+
+	/* ---- particles.js container ---- */ 
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 50% 80%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	}
+
+}
+
+@media screen and (min-width:418px) and (max-width:488px)
+{
+		
+	.typewriter
+	{
+
+		margin-top: 25em;
+		margin-left: -3em;
+	}
+
+	/* ---- particles.js container ---- */ 
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 50% 80%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	}
+
+}
+
+@media screen and (min-width:488px) and (max-width: 620px)
+{
+		
+	.typewriter
+	{
+
+		margin-top: 25em;
+		margin-right: 2em;
+	}
+
+	/* ---- particles.js container ---- */ 
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 50% 80%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	}
+
+}
+
+@media screen and (min-width:620px) and (max-width: 700px)
+{
+		
+	.typewriter
+	{
+
+		margin-top: 15em;
+		margin-left: 1.5em;
+		font-size: 1.5em
+	}
+
+	/* ---- particles.js container ---- */ 
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 50% 80%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	}
+
+}
+
+@media screen and (min-width:700px) and(max-width: 788px)
+{
+		
+	.typewriter
+	{
+
+		margin-top: -2em;
+		margin-left: 12em;
+	}
+
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 90% -50%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	} 
+
+}
+
+@media screen and (min-width:788px) 
+{
+		
+	.typewriter
+	{
+
+		margin-top: -2em;
+		margin-left: 12em;
+	}
+
+	#particles-js
+	{ 
+		position:absolute; 
+		width: 100%; 
+		height: 80%; 
+		/* background-color: #000000;  */
+		background-image: url('/home/resurrected/Documents/FrontEnd/portFolio/images/i-love-coding-dark-big-600_small_1x.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: 100%; 
+		background-position: 90% 10%; 	
+		display: flex;
+		flex-wrap: wrap;
+		/* justify-content: center; */
+	} 
+
+}
+.typewriter h1 
+{
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.5em;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* fontawesome */
+[class*="fontawesome-"]::before 
+{
+  font-family: 'FontAwesome', sans-serif;
+  display: inline-flex;
+  flex-wrap: wrap;
+	/* list-style: none; */
+	color: #ffffff;
+	font-size: 100%;
+	margin: 27em 0em 0em 0em;
+	align-content: center;
+	justify-content: center;
+	display: none;	
+}
+
+.socialIcons a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
+{
+
+	margin: 0em 2em 0em 6em;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.socialIcons a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
+{
+
+	margin: 0em 2em 0em 0em;
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*Top navigation div */
+.navigate
+{
+
+	/* display: inline-flex; */
+	height: 2.5em;
+	width: 100%;
+	font-size: 16px;
+	font-style: Raleway;
+	background-color: #161616;
+}
+
+.navigate a 
+{
+	display: none;
+}
+
+.navigate a.icon 
+{
+	float: right;
+	display: block;
+}
+
+.navigate a:first-of-type        /*To set properties of first 'a' element in nav*/
+{
+
+	color: #ffffff;
+	float: left;
+	margin: 0.75em 0em 0em 1em;
+	text-decoration: none;
+	display: flex;
+
+}
+
+.navigate a            /*To set properties of all 'a' elements in nav*/
+{
+
+	color: #ffffff;
+	float: right;
+	margin: 0.75em 2em 0em 0em;
+	text-decoration: none;
+	overflow: hidden;
+
+}
+
+.navigate a:not(:first-of-type):hover         /*To set hover properties to all 'a' elements in nav*/
+{
+
+	color : red;
+}
+
+.navigate .icon {
+  display: none;
+}
+
+.navigate.responsive 
+{
+	position: relative;
+	height: 2.5em;
+	width: 100%;
+	font-size: 16px;
+	font-style: Raleway;
+	background-color: #161616;
+}
+
+.navigate.responsive .icon 
+{
+	position: relative;
+	right: 0;
+	top: 0;
+}
+
+.navigate.responsive a 
+{
+	/* float: none; */
+	display: block;
+	text-align: left;
+	color: #ffffff;
+	float: right;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+
+body               /*To set properties for body of html*/
+{ 
+	margin:0; 
+	font:normal 75% Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #141414;
+}  
+
+
+canvas           /*To set properties for canvas of particles animation*/
+{ 
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: bottom; 
+	/* margin-top: 100em; */
+	height: 100%;
+} 
+ 
+
+
