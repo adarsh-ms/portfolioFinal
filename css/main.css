@@ -2,6 +2,118 @@
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+@media screen and (min-width:980px) and (max-width:1259px)
+{
+	
+
+	.socialIcons 
+	{
+		display: none;
+	}
+
+}
+
+@media screen and (min-width:1260px) and (max-width:1284px), screen and (-webkit-device-pixel-ratio: 1.5)
+{
+
+	/* fontawesome */
+	[class*="fontawesome-"]::before 
+	{
+	  font-family: 'FontAwesome', sans-serif;
+	  display: inline-block;
+		/* list-style: none; */
+		color: #ffffff;
+		font-size: 2em;
+		margin: 15em 0em 0em 0em;
+	}
+
+	.socialIcons a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
+	{
+
+		margin: 0em 2em 0em 66em;
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.socialIcons a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
+	{
+
+		margin: 0em 2em 0em 0em;
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+}
+
+@media screen and (min-width:1285px) and (max-width:1314px)
+{
+
+	/* fontawesome */
+	[class*="fontawesome-"]::before 
+	{
+	  font-family: 'FontAwesome', sans-serif;
+	  display: inline-block;
+		/* list-style: none; */
+		color: #ffffff;
+		font-size: 2em;
+		margin: 13.5em 0em 0em 0em;
+	}
+
+	.socialIcons a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
+	{
+
+		margin: 0em 2em 0em 68em;
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.socialIcons a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
+	{
+
+		margin: 0em 2em 0em 0em;
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+}
+
+@media screen and (min-width:1315px)
+{
+
+	/* fontawesome */
+	[class*="fontawesome-"]::before 
+	{
+	  font-family: 'FontAwesome', sans-serif;
+	  display: inline-block;
+		/* list-style: none; */
+		color: #ffffff;
+		font-size: 2em;
+		margin: 15em 0em 0em 0em;
+	}
+
+	.socialIcons a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
+	{
+
+		margin: 0em 2em 0em 72em;
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	.socialIcons a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
+	{
+
+		margin: 0em 2em 0em 0em;
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+}
+
 .typewriter					/* Div for typewriter*/
 {
 	
@@ -21,7 +133,7 @@
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-  margin-top: calc(100% - 80%); 
+  /* margin-top: calc(100% - 80%);  */
 }
 
 /* The typing effect */
@@ -36,43 +148,19 @@
   50% { border-color: orange }
 }
 
-/* fontawesome */
-[class*="fontawesome-"]::before 
-{
-  font-family: 'FontAwesome', sans-serif;
-  display: inline-block;
-	/* list-style: none; */
-	color: #ffffff;
-	font-size: 2em;
-	margin: 11.5em 0em 0em 0em;
-}
-
-.socialIcons a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
-{
-
-	margin: 0em 2em 0em 66em;
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.socialIcons a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
-{
-
-	margin: 0em 2em 0em 0em;
-	text-decoration: none;
-	color: #FFF;
-}
-
 /*Top navigation div */
 #navigation
 {
 
 	display: inline-flex;
-	height: 5em;
-	width: 100%;
+	height: auto;
+	max-width: 100%;
 	font-size: 16px;
 	font-style: Raleway;
 	overflow: hidden;
+	margin: auto;
+	display: flex;
+	flex-direction: row; 
 }
 
 #navigation a:first-of-type        /*To set properties of first 'a' element in nav*/
@@ -80,7 +168,7 @@
 
 	color: #ffffff;
 	float: right;
-	margin: 0.75em 2em 0em 50em;
+	margin: 0.75em 2em 0em 65vw;
 	text-decoration: none;
 
 }
@@ -92,6 +180,7 @@
 	float: right;
 	margin: 0.75em 2em 0em 0em;
 	text-decoration: none;
+	flex-grow: 2;
 
 }
 
@@ -136,22 +225,27 @@ nav.brackets a:hover:before, nav.brackets a:hover:after
     transform: translateX(0px);
 }
 
-body               /*To set properties for body of html*/
+.container              /*To set properties for body of html*/
 { 
 	margin:0; 
 	font:normal 75% Arial, Helvetica, sans-serif;
-	display: block;
-	justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: auto;
+/* 	justify-content: center; */
 	background-color: #141414;
+	display: flex;
+	flex-wrap: wrap;
 }  
+
 
 
 canvas           /*To set properties for canvas of particles animation*/
 { 
 	display: block;
 	vertical-align: bottom; 
-	margin-top: 6em;
-	height: 100%
+	margin-top: 5em;
+	height: auto;
 } 
 
 /* ---- particles.js container ---- */ 
@@ -170,3 +264,49 @@ canvas           /*To set properties for canvas of particles animation*/
 } 
 
 
+								/* about section styles */
+
+
+#aboutMe
+{
+
+	color: #FFF;
+	margin: 5em 3em auto;
+	font-size: 12px;
+	font-family: 'Amaranth', sans-serif;
+}
+
+#aboutMe .htmlCss
+{
+
+	width: 40%;
+	margin: 3em 0 auto;
+
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  
+  	font-family: 'entypo', sans-serif;
+  	display: inline-block;
+	/* list-style: none; */
+	color: #ffffff;
+	font-size: 2.5em;
+	margin: 0.5em 0em 0em 0em;
+}
+
+.socialIconsAbout a:first-of-type     /*To set properties of first 'a' element in socialIcons div*/
+{
+
+	margin: 0em 2em 0em 0em;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.socialIconsAbout a:not(:first-of-type)        /*To set properties of all 'a' elements except first one in socialIcons div*/
+{
+
+	margin: 0em 2em 0em 0em;
+	text-decoration: none;
+	color: #FFF;
+}
